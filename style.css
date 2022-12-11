@@ -5,6 +5,9 @@
 }
 body {
     position: relative;
+    width: 100%;
+    overflow-x: hidden;
+
 }
 
 a {
@@ -103,7 +106,6 @@ ul {
       display: block;
       object-fit: cover;
       max-width: 100%;
-      
     }
 
   nav {
