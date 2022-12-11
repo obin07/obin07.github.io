@@ -1,0 +1,112 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body {
+    position: relative;
+}
+
+a {
+    text-decoration: none;
+    display: block;
+    color: white;
+    background: dodgerblue;
+    padding: 10px 5px;
+    border-radius: 20px;
+}
+
+a:hover {
+    color: orange;
+    background: green;
+}
+
+h1 {
+    text-transform: uppercase;
+    background: dodgerblue;
+    padding: 10px 5px;
+    color: whitesmoke;
+    border-radius: 20px;
+    min-width: 300px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background:rgb(87, 80, 80);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    box-shadow: rgba(236, 8, 8, 0.16) 0px 1px 4px, rgb(12, 12, 12) 0px 0px 0px 3px;
+    
+}
+
+.mini-nav {
+    display: flex;
+    column-gap: 10px;
+    align-items: center;
+}
+
+ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type:none;
+    gap: 5px;
+  }
+  
+  li {
+    height: 40vh;
+    flex-grow: 1;
+  }
+  
+  img {
+    max-height: 100%;
+    min-width: 100%;
+    object-fit: cover;
+    vertical-align: bottom;
+  }
+  
+  li:last-child {
+    flex-grow: 1;
+  }
+
+  .gallary {
+    margin-bottom: 0.5%;
+  }
+
+  footer {
+    background:#333;
+    color: white;
+    min-height: 50px;
+    font-size: 1.5rem;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  @media screen and (max-width: 600px) {
+    nav {
+        flex-direction: column;
+        row-gap: 10px;
+        align-items: center;
+    }
+
+    .mini-nav {
+        min-width: 300px;
+        justify-content: space-evenly;
+    }
+
+    .gallary > *img{
+        display: block;
+        object-fit: cover;
+        max-width: 100%;
+        height: auto;
+    }
+
+    h1 {
+        text-align: center;
+    }
+    
+  }
