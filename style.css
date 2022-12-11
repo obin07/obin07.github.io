@@ -99,6 +99,13 @@ ul {
        
     }
 
+    img {
+      display: block;
+      object-fit: cover;
+      max-width: 100%;
+      
+    }
+
   nav {
     display: inline-flex;
   }
@@ -107,5 +114,7 @@ ul {
         text-align: center;
     }
   }
+
+
     
   
