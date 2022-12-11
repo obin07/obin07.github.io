@@ -35,8 +35,7 @@ nav {
     justify-content: space-between;
     padding: 20px;
     background:rgb(87, 80, 80);
-    position: fixed;
-    top: 0;
+  
     width: 100%;
     box-shadow: rgba(236, 8, 8, 0.16) 0px 1px 4px, rgb(12, 12, 12) 0px 0px 0px 3px;
     
@@ -91,22 +90,22 @@ ul {
         flex-direction: column;
         row-gap: 10px;
         align-items: center;
+        align-items: center;
     }
 
     .mini-nav {
         min-width: 300px;
-        justify-content: space-evenly;
+        align-items: center;
+       
     }
 
-    .gallary > *img{
-        display: block;
-        object-fit: cover;
-        max-width: 100%;
-        height: auto;
-    }
+  nav {
+    display: inline-flex;
+  }
 
     h1 {
         text-align: center;
     }
-    
   }
+    
+  
