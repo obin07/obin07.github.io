@@ -131,11 +131,12 @@ ul {
       object-fit: cover;
       max-width: 100%;
     }
-
-  nav {
-    display: inline-flex;
-  }
-
+    
+    ul {
+      display: block;
+      padding: 10px;
+    }
+ 
     h1 {
         text-align: center;
     }
