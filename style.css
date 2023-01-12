@@ -112,7 +112,7 @@ ul {
     padding: 20px;
   }
 
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 650px) {
     nav {
         flex-direction: column;
         row-gap: 10px;
