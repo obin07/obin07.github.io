@@ -39,7 +39,7 @@ h1 {
 nav {
   display: flex;
   justify-content: space-between;
-  background: rgb(75, 73, 73);
+  background: rgb(57, 39, 39);
   width: 100%;
   box-shadow: rgba(236, 8, 8, 0.16) 0px 1px 4px, rgb(12, 12, 12) 0px 0px 0px 3px;
   padding: 15px 0;
@@ -61,6 +61,10 @@ img {
 
 #redflower {
   max-height: 400px;
+}
+
+.gallery {
+  padding: 0 10px 0 10px;
 }
 
 ul {
