@@ -10,32 +10,44 @@
     <meta name="author" content="Y@m">
     <title>o3in07</title>
     <link rel="stylesheet" href="./style.css">
+    <link rel="preload" href="./images/umbagog.jpg" as="image">
+    <link rel="preload" href="./images/boomerang.jpg" as="image">
+    <link rel="preload" href="./images/goose.jpg" as="image">
 </head>
 
 <body>
     <header>
         <nav>
             <h1>Sony 6400</h1>
-            <div class="mini-nav">
-                <p><a href="#">Contact</a></p>
-                <p style="padding-right:15px"><a href="#">About Me</a></p>
+            <div class="nav-actions">
+                <button id="dark-toggle" class="dark-toggle" aria-pressed="false" title="Toggle dark mode">
+                    <svg viewBox="0 0 24 24" width="20" height="20" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                        <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z" fill="currentColor" />
+                    </svg>
+                </button>
             </div>
         </nav>
     </header>
-    <div class="gallery">
-        <ul>
-
-            <li><img  src='./images/boomerang.jpg' alt=''></li>
-            <li><img  src='./images/goose.jpg' alt=''></li>
-            <li><img  src='./images/fallumbagog.jpg' alt=''></li>
-            <li><img  src='./images/grafton.jpg' alt=''></li>
-            <li><img  src='./images/Teal&orange.jpg' alt=''></li>
-            <li><img src='./images/birds.JPG' alt=''></li>
-            <li id="lake"><img src='./images/umbagog.jpg' alt=''></li>
-            <li><img  src="./images/fallfoliage.jpg" alt=""></li>
-            <li><img  src='./images/100partri.jpg' alt=''></li>
-
-        </ul>
+    <div class="gallery" aria-live="polite">
+        <div class="thumbs">
+            <ul id="thumb-list" role="list" aria-label="Image thumbnails"></ul>
+            <div class="load-more-wrap">
+                <button id="load-more" class="load-more" aria-controls="thumb-list">Load more</button>
+            </div>
+        </div>
+        <div class="display" aria-live="polite" aria-atomic="true">
+            <img id="main-display" src="" alt="" role="img">
+        </div>
+    </div>
+    <!-- Accessible viewer modal for mobile -->
+    <div id="viewer" class="viewer" role="dialog" aria-modal="true" aria-hidden="true">
+        <button id="viewer-close" class="viewer-close" aria-label="Close viewer">✕</button>
+        <button id="viewer-prev" class="viewer-nav viewer-prev" aria-label="Previous image">‹</button>
+        <div class="viewer-stage" role="document">
+            <img id="viewer-img" src="" alt="" />
+            <div id="viewer-caption" class="viewer-caption" aria-live="polite"></div>
+        </div>
+        <button id="viewer-next" class="viewer-nav viewer-next" aria-label="Next image">›</button>
     </div>
 
     <footer>

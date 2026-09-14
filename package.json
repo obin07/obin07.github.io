@@ -1,0 +1,11 @@
+{
+  "name": "obin07-gallery",
+  "version": "1.0.0",
+  "description": "Static responsive photo gallery",
+  "scripts": {
+    "generate-assets": "node scripts/generate-assets.js"
+  },
+  "dependencies": {
+    "sharp": "^0.32.0"
+  }
+}
