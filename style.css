@@ -316,7 +316,7 @@ footer {
 
 @media screen and (max-width: 899px) {
   .nav-language {
-    display: none;
+    display: none !important;
   }
 }
 
