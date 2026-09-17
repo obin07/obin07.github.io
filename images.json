@@ -2,6 +2,8 @@
   {
     "file": "100partri.jpg",
     "alt": "100partri",
+    "caption": "This picture was taken right around winter, when it would be festival time in Nepal.",
+    "captionNe": "यो तस्वीर जाडो यामको आसपास खिचिएको हो, नेपालमा चाडपर्वको समय हुने बेला।",
     "display": "./images/optimized/100partri-2000.jpg",
     "srcset": "./images/optimized/100partri-400.jpg 400w, ./images/optimized/100partri-800.jpg 800w, ./images/optimized/100partri-1200.jpg 1200w, ./images/optimized/100partri-2000.jpg 2000w",
     "webpSrcset": "./images/optimized/100partri-400.webp 400w, ./images/optimized/100partri-800.webp 800w, ./images/optimized/100partri-1200.webp 1200w, ./images/optimized/100partri-2000.webp 2000w",
@@ -10,6 +12,8 @@
   {
     "file": "birds.jpg",
     "alt": "birds",
+    "caption": "A quiet gathering in flight, held together by the rhythm of the open sky.",
+    "captionNe": "खुला आकाशको लयमा एकसाथ उडिरहेका चराहरूको शान्त जमघट।",
     "display": "./images/optimized/birds-2000.jpg",
     "srcset": "./images/optimized/birds-400.jpg 400w, ./images/optimized/birds-800.jpg 800w, ./images/optimized/birds-1200.jpg 1200w, ./images/optimized/birds-2000.jpg 2000w",
     "webpSrcset": "./images/optimized/birds-400.webp 400w, ./images/optimized/birds-800.webp 800w, ./images/optimized/birds-1200.webp 1200w, ./images/optimized/birds-2000.webp 2000w",
@@ -18,6 +22,8 @@
   {
     "file": "boomerang.jpg",
     "alt": "boomerang",
+    "caption": "A clean arc against the landscape, where motion briefly becomes a perfect shape.",
+    "captionNe": "प्रकृतिको पृष्ठभूमिमा बनेको सुन्दर वक्र, जहाँ गति केही क्षणका लागि पूर्ण आकार बन्छ।",
     "display": "./images/optimized/boomerang-2000.jpg",
     "srcset": "./images/optimized/boomerang-400.jpg 400w, ./images/optimized/boomerang-800.jpg 800w, ./images/optimized/boomerang-1200.jpg 1200w, ./images/optimized/boomerang-2000.jpg 2000w",
     "webpSrcset": "./images/optimized/boomerang-400.webp 400w, ./images/optimized/boomerang-800.webp 800w, ./images/optimized/boomerang-1200.webp 1200w, ./images/optimized/boomerang-2000.webp 2000w",
@@ -26,6 +32,8 @@
   {
     "file": "cog_rail.jpg",
     "alt": "cog rail",
+    "caption": "Steel, weather, and distance meet along the old line into the mountains.",
+    "captionNe": "पहाडतर्फ जाने पुरानो रेलमार्गमा फलाम, मौसम र दूरी एकसाथ भेटिन्छन्।",
     "display": "./images/optimized/cog_rail-2000.jpg",
     "srcset": "./images/optimized/cog_rail-400.jpg 400w, ./images/optimized/cog_rail-800.jpg 800w, ./images/optimized/cog_rail-1200.jpg 1200w, ./images/optimized/cog_rail-2000.jpg 2000w",
     "webpSrcset": "./images/optimized/cog_rail-400.webp 400w, ./images/optimized/cog_rail-800.webp 800w, ./images/optimized/cog_rail-1200.webp 1200w, ./images/optimized/cog_rail-2000.webp 2000w",
@@ -34,6 +42,8 @@
   {
     "file": "fall.jpg",
     "alt": "fall",
+    "caption": "The season turns quietly here, leaving the road framed in copper and gold.",
+    "captionNe": "यहाँ ऋतु चुपचाप फेरिन्छ, अनि तामे र सुनौला रङले बाटोलाई घेर्छ।",
     "display": "./images/optimized/fall-2000.jpg",
     "srcset": "./images/optimized/fall-400.jpg 400w, ./images/optimized/fall-800.jpg 800w, ./images/optimized/fall-1200.jpg 1200w, ./images/optimized/fall-2000.jpg 2000w",
     "webpSrcset": "./images/optimized/fall-400.webp 400w, ./images/optimized/fall-800.webp 800w, ./images/optimized/fall-1200.webp 1200w, ./images/optimized/fall-2000.webp 2000w",
@@ -42,6 +52,8 @@
   {
     "file": "fallfoliage.jpg",
     "alt": "fallfoliage",
+    "caption": "An entire hillside catches fire with color before the first cold evening arrives.",
+    "captionNe": "पहिलो चिसो साँझ आउनुअघि नै सिंगो डाँडाकाँडा रङहरूको आगोले चम्किन्छ।",
     "display": "./images/optimized/fallfoliage-2000.jpg",
     "srcset": "./images/optimized/fallfoliage-400.jpg 400w, ./images/optimized/fallfoliage-800.jpg 800w, ./images/optimized/fallfoliage-1200.jpg 1200w, ./images/optimized/fallfoliage-2000.jpg 2000w",
     "webpSrcset": "./images/optimized/fallfoliage-400.webp 400w, ./images/optimized/fallfoliage-800.webp 800w, ./images/optimized/fallfoliage-1200.webp 1200w, ./images/optimized/fallfoliage-2000.webp 2000w",
@@ -50,6 +62,8 @@
   {
     "file": "fallumbagog.jpg",
     "alt": "fallumbagog",
+    "caption": "Autumn settles over Umbagog Lake, reflected in a stillness that feels almost cinematic.",
+    "captionNe": "उम्बागोग तालमाथि शरद ऋतु बस्छ, र यसको शान्त प्रतिबिम्ब चलचित्रको दृश्यजस्तै लाग्छ।",
     "display": "./images/optimized/fallumbagog-2000.jpg",
     "srcset": "./images/optimized/fallumbagog-400.jpg 400w, ./images/optimized/fallumbagog-800.jpg 800w, ./images/optimized/fallumbagog-1200.jpg 1200w, ./images/optimized/fallumbagog-2000.jpg 2000w",
     "webpSrcset": "./images/optimized/fallumbagog-400.webp 400w, ./images/optimized/fallumbagog-800.webp 800w, ./images/optimized/fallumbagog-1200.webp 1200w, ./images/optimized/fallumbagog-2000.webp 2000w",
@@ -58,6 +72,8 @@
   {
     "file": "goose.jpg",
     "alt": "goose",
+    "caption": "A solitary pause on the water, alert to every movement beyond the frame.",
+    "captionNe": "पानीमाथिको एकान्त विश्राम, फ्रेमबाहिरको हरेक हलचलप्रति सजग।",
     "display": "./images/optimized/goose-2000.jpg",
     "srcset": "./images/optimized/goose-400.jpg 400w, ./images/optimized/goose-800.jpg 800w, ./images/optimized/goose-1200.jpg 1200w, ./images/optimized/goose-2000.jpg 2000w",
     "webpSrcset": "./images/optimized/goose-400.webp 400w, ./images/optimized/goose-800.webp 800w, ./images/optimized/goose-1200.webp 1200w, ./images/optimized/goose-2000.webp 2000w",
@@ -66,6 +82,8 @@
   {
     "file": "grafton.jpg",
     "alt": "grafton",
+    "caption": "Grafton's quiet edges hold the soft, weathered character of an old New England day.",
+    "captionNe": "ग्राफ्टनका शान्त किनारामा पुरानो न्यू इङ्ग्ल्यान्डको नरम र मौसमले छोएको अनुभूति छ।",
     "display": "./images/optimized/grafton-2000.jpg",
     "srcset": "./images/optimized/grafton-400.jpg 400w, ./images/optimized/grafton-800.jpg 800w, ./images/optimized/grafton-1200.jpg 1200w, ./images/optimized/grafton-2000.jpg 2000w",
     "webpSrcset": "./images/optimized/grafton-400.webp 400w, ./images/optimized/grafton-800.webp 800w, ./images/optimized/grafton-1200.webp 1200w, ./images/optimized/grafton-2000.webp 2000w",
@@ -74,6 +92,8 @@
   {
     "file": "intothewild.jpg",
     "alt": "intothewild",
+    "caption": "The trail narrows and the horizon opens, inviting one more step beyond the familiar.",
+    "captionNe": "बाटो साँघुरिँदै जान्छ र क्षितिज खुल्दै जान्छ, परिचित सीमाभन्दा पर अर्को पाइला चाल्न निम्तो दिँदै।",
     "display": "./images/optimized/intothewild-2000.jpg",
     "srcset": "./images/optimized/intothewild-400.jpg 400w, ./images/optimized/intothewild-800.jpg 800w, ./images/optimized/intothewild-1200.jpg 1200w, ./images/optimized/intothewild-2000.jpg 2000w",
     "webpSrcset": "./images/optimized/intothewild-400.webp 400w, ./images/optimized/intothewild-800.webp 800w, ./images/optimized/intothewild-1200.webp 1200w, ./images/optimized/intothewild-2000.webp 2000w",
@@ -82,6 +102,8 @@
   {
     "file": "jay_peak.jpg",
     "alt": "jay peak",
+    "caption": "A high-country view from Jay Peak, shaped by wind, snow, and enormous distance.",
+    "captionNe": "जे पीकबाट देखिएको उचाइको दृश्य, हावा, हिउँ र विशाल दूरीले आकार दिएको।",
     "display": "./images/optimized/jay_peak-2000.jpg",
     "srcset": "./images/optimized/jay_peak-400.jpg 400w, ./images/optimized/jay_peak-800.jpg 800w, ./images/optimized/jay_peak-1200.jpg 1200w, ./images/optimized/jay_peak-2000.jpg 2000w",
     "webpSrcset": "./images/optimized/jay_peak-400.webp 400w, ./images/optimized/jay_peak-800.webp 800w, ./images/optimized/jay_peak-1200.webp 1200w, ./images/optimized/jay_peak-2000.webp 2000w",
@@ -90,6 +112,8 @@
   {
     "file": "jay_peak_ak.jpg",
     "alt": "jay peak ak",
+    "caption": "Cold northern light washes across the ridge and makes the mountains feel endless.",
+    "captionNe": "उत्तरको चिसो प्रकाश डाँडामाथि फैलिँदा पहाडहरू अनन्तजस्ता देखिन्छन्।",
     "display": "./images/optimized/jay_peak_ak-2000.jpg",
     "srcset": "./images/optimized/jay_peak_ak-400.jpg 400w, ./images/optimized/jay_peak_ak-800.jpg 800w, ./images/optimized/jay_peak_ak-1200.jpg 1200w, ./images/optimized/jay_peak_ak-2000.jpg 2000w",
     "webpSrcset": "./images/optimized/jay_peak_ak-400.webp 400w, ./images/optimized/jay_peak_ak-800.webp 800w, ./images/optimized/jay_peak_ak-1200.webp 1200w, ./images/optimized/jay_peak_ak-2000.webp 2000w",
@@ -98,6 +122,8 @@
   {
     "file": "jerico_camp.jpg",
     "alt": "jerico camp",
+    "caption": "Camp at the edge of the day, where a small fire makes the wilderness feel close.",
+    "captionNe": "दिनको अन्तिम छेउमा शिविर, जहाँ सानो आगोले जङ्गललाई नजिकैको जस्तो बनाउँछ।",
     "display": "./images/optimized/jerico_camp-2000.jpg",
     "srcset": "./images/optimized/jerico_camp-400.jpg 400w, ./images/optimized/jerico_camp-800.jpg 800w, ./images/optimized/jerico_camp-1200.jpg 1200w, ./images/optimized/jerico_camp-2000.jpg 2000w",
     "webpSrcset": "./images/optimized/jerico_camp-400.webp 400w, ./images/optimized/jerico_camp-800.webp 800w, ./images/optimized/jerico_camp-1200.webp 1200w, ./images/optimized/jerico_camp-2000.webp 2000w",
@@ -106,6 +132,8 @@
   {
     "file": "teal_orange.jpg",
     "alt": "teal orange",
+    "caption": "A study in complementary color, with warm light pushing through the cool shadows.",
+    "captionNe": "पूरक रङहरूको अध्ययन, जहाँ न्यानो प्रकाश चिसा छायाहरूबीचबाट अघि बढ्छ।",
     "display": "./images/optimized/teal_orange-2000.jpg",
     "srcset": "./images/optimized/teal_orange-400.jpg 400w, ./images/optimized/teal_orange-800.jpg 800w, ./images/optimized/teal_orange-1200.jpg 1200w, ./images/optimized/teal_orange-2000.jpg 2000w",
     "webpSrcset": "./images/optimized/teal_orange-400.webp 400w, ./images/optimized/teal_orange-800.webp 800w, ./images/optimized/teal_orange-1200.webp 1200w, ./images/optimized/teal_orange-2000.webp 2000w",
@@ -114,6 +142,8 @@
   {
     "file": "umbagog.jpg",
     "alt": "umbagog",
+    "caption": "Umbagog Lake before the day begins, with the shoreline drawn in silver light.",
+    "captionNe": "दिन सुरु हुनुअघिको उम्बागोग ताल, चाँदीजस्तो प्रकाशले कोरिएको किनारासहित।",
     "display": "./images/optimized/umbagog-2000.jpg",
     "srcset": "./images/optimized/umbagog-400.jpg 400w, ./images/optimized/umbagog-800.jpg 800w, ./images/optimized/umbagog-1200.jpg 1200w, ./images/optimized/umbagog-2000.jpg 2000w",
     "webpSrcset": "./images/optimized/umbagog-400.webp 400w, ./images/optimized/umbagog-800.webp 800w, ./images/optimized/umbagog-1200.webp 1200w, ./images/optimized/umbagog-2000.webp 2000w",
@@ -122,6 +152,8 @@
   {
     "file": "waltham.jpg",
     "alt": "waltham",
+    "caption": "An unhurried Waltham morning, photographed in the gentle space between light and shade.",
+    "captionNe": "प्रकाश र छायाबीचको कोमल क्षणमा खिचिएको वल्थामको हताररहित बिहान।",
     "display": "./images/optimized/waltham-2000.jpg",
     "srcset": "./images/optimized/waltham-400.jpg 400w, ./images/optimized/waltham-800.jpg 800w, ./images/optimized/waltham-1200.jpg 1200w, ./images/optimized/waltham-2000.jpg 2000w",
     "webpSrcset": "./images/optimized/waltham-400.webp 400w, ./images/optimized/waltham-800.webp 800w, ./images/optimized/waltham-1200.webp 1200w, ./images/optimized/waltham-2000.webp 2000w",
@@ -130,6 +162,8 @@
   {
     "file": "williard.jpg",
     "alt": "williard",
+    "caption": "The landscape holds its breath at Williard, waiting for the last light to disappear.",
+    "captionNe": "अन्तिम प्रकाश हराउने प्रतीक्षामा विलियर्डको भू-दृश्यले आफ्नो सास रोकेको छ।",
     "display": "./images/optimized/williard-2000.jpg",
     "srcset": "./images/optimized/williard-400.jpg 400w, ./images/optimized/williard-800.jpg 800w, ./images/optimized/williard-1200.jpg 1200w, ./images/optimized/williard-2000.jpg 2000w",
     "webpSrcset": "./images/optimized/williard-400.webp 400w, ./images/optimized/williard-800.webp 800w, ./images/optimized/williard-1200.webp 1200w, ./images/optimized/williard-2000.webp 2000w",

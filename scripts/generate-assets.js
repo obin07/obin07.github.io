@@ -44,7 +44,11 @@ async function processImage(file) {
     const entry = manifest[i];
     try {
       const out = await processImage(entry.file);
-      manifest[i] = Object.assign({}, entry, out, { sizes: '(min-width: 900px) 60vw, 100vw' });
+      manifest[i] = Object.assign({}, entry, out, {
+        caption: entry.caption || '',
+        captionNe: entry.captionNe || '',
+        sizes: '(min-width: 900px) 60vw, 100vw'
+      });
       console.log('Processed', entry.file);
     } catch (e) {
       console.error('Failed', entry.file, e);

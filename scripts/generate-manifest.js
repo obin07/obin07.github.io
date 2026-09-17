@@ -8,10 +8,14 @@ const exts = ['.jpg', '.jpeg', '.png', '.webp', '.gif', '.svg'];
 
 const files = fs.readdirSync(imagesDir).filter(f => exts.includes(path.extname(f).toLowerCase()));
 
-const manifest = files.map(f => ({
-  file: f,
-  alt: path.basename(f, path.extname(f)).replace(/[-_]/g, ' ')
-}));
+const manifest = files.map(f => {
+  return {
+    file: f,
+    alt: path.basename(f, path.extname(f)).replace(/[-_]/g, ' '),
+    caption: '',
+    captionNe: ''
+  };
+});
 
 fs.writeFileSync(out, JSON.stringify(manifest, null, 2));
 console.log('Wrote', out);
