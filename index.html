@@ -18,13 +18,13 @@
 <body>
     <header>
         <nav>
-            <h1>Sony 6400</h1>
-            <div class="nav-actions">
-                <button id="dark-toggle" class="dark-toggle" aria-pressed="false" title="Toggle dark mode">
-                    <svg viewBox="0 0 24 24" width="20" height="20" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                        <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z" fill="currentColor" />
-                    </svg>
-                </button>
+            <h1>O3IN07</h1>
+            <div class="nav-language">
+                <label for="caption-language-select" class="visually-hidden">Caption language</label>
+                <select id="caption-language-select" aria-label="Caption language">
+                    <option value="en">English</option>
+                    <option value="ne">नेपाली</option>
+                </select>
             </div>
         </nav>
     </header>
@@ -35,9 +35,10 @@
                 <button id="load-more" class="load-more" aria-controls="thumb-list">Load more</button>
             </div>
         </div>
-        <div class="display" aria-live="polite" aria-atomic="true">
+        <figure class="display" aria-live="polite" aria-atomic="true">
             <img id="main-display" src="" alt="" role="img">
-        </div>
+            <figcaption id="display-caption"></figcaption>
+        </figure>
     </div>
     <!-- Accessible viewer modal for mobile -->
     <div id="viewer" class="viewer" role="dialog" aria-modal="true" aria-hidden="true">
@@ -50,9 +51,9 @@
         <button id="viewer-next" class="viewer-nav viewer-next" aria-label="Next image">›</button>
     </div>
 
-    <footer>
+    <!-- <footer>
         <p>&#169; <em>obin07 Photography</em></p>
-    </footer>
+    </footer> -->
     <script src="./app.js"></script>
 </body>
 

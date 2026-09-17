@@ -1,5 +1,7 @@
 document.addEventListener('DOMContentLoaded', async () => {
 	const main = document.getElementById('main-display');
+	const displayCaption = document.getElementById('display-caption');
+	const captionLanguageSelect = document.getElementById('caption-language-select');
 	const thumbList = document.getElementById('thumb-list');
 	const loadMoreBtn = document.getElementById('load-more');
 	const viewer = document.getElementById('viewer');
@@ -26,6 +28,9 @@ document.addEventListener('DOMContentLoaded', async () => {
 	let rendered = 0;
 	let currentIndex = 0;
 	let lastFocused = null;
+	let captionLanguage = localStorage.getItem('captionLanguage') || 'en';
+	if (captionLanguageSelect) captionLanguageSelect.value = captionLanguage;
+	document.documentElement.lang = captionLanguage === 'ne' ? 'ne' : 'en';
 
 	function createAlt(name) {
 		return name.replace(/\.[^/.]+$/, '').replace(/[-_]/g, ' ');
@@ -35,12 +40,26 @@ document.addEventListener('DOMContentLoaded', async () => {
 		const item = manifest[i];
 		if (!item) return;
 		const src = item.display || `./images/${item.file}`;
+		const caption = getCaption(item);
 		main.src = src;
 		main.alt = item.alt || createAlt(item.file);
+		main.classList.remove('hero-image-reveal');
+		void main.offsetWidth;
+		main.classList.add('hero-image-reveal');
+		if (displayCaption) {
+			displayCaption.textContent = caption;
+			displayCaption.classList.remove('caption-reveal');
+			void displayCaption.offsetWidth;
+			displayCaption.classList.add('caption-reveal');
+		}
 		thumbs.forEach(t => t.classList.remove('selected'));
 		thumbs[i].classList.add('selected');
 		// store last viewed
 		try { localStorage.setItem('lastImage', item.file); } catch(e){}
+	}
+
+	function getCaption(item) {
+		return captionLanguage === 'ne' ? (item.captionNe || item.caption || '') : (item.caption || '');
 	}
 
 	// build thumbs
@@ -97,6 +116,11 @@ document.addEventListener('DOMContentLoaded', async () => {
 		if (rendered >= manifest.length && loadMoreBtn) loadMoreBtn.hidden = true;
 	}
 
+	thumbList.addEventListener('focusin', (e) => {
+		const idx = thumbs.indexOf(e.target);
+		if (window.innerWidth >= 900 && idx >= 0) selectIndex(idx);
+	});
+
 	function onThumbActivate(idx, el) {
 		// on mobile open viewer, on desktop update main display
 		if (window.innerWidth < 900) {
@@ -143,7 +167,8 @@ document.addEventListener('DOMContentLoaded', async () => {
 		const src = item.display || `./images/${item.file}`;
 		viewerImg.src = src;
 		viewerImg.alt = item.alt || createAlt(item.file);
-		viewerCaption.textContent = viewerImg.alt;
+		viewerCaption.textContent = getCaption(item);
+		viewerCaption.lang = captionLanguage === 'ne' ? 'ne' : 'en';
 		currentIndex = idx;
 	}
 
@@ -156,16 +181,14 @@ document.addEventListener('DOMContentLoaded', async () => {
 	viewerClose.addEventListener('click', closeViewer);
 	viewerPrev.addEventListener('click', () => showViewerIndex((currentIndex -1 + manifest.length)%manifest.length));
 	viewerNext.addEventListener('click', () => showViewerIndex((currentIndex +1)%manifest.length));
-
-	// Dark-mode toggle (preserve existing behavior)
-	const toggle = document.getElementById('dark-toggle');
-	const saved = localStorage.getItem('theme');
-	const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
-	function applyTheme(dark) { document.body.classList.toggle('dark', dark); if (toggle) toggle.setAttribute('aria-pressed', dark ? 'true' : 'false'); }
-	if (saved === 'dark' || (saved === null && prefersDark)) applyTheme(true); else applyTheme(false);
-	if (toggle) {
-		toggle.tabIndex = 0;
-		toggle.addEventListener('click', () => { const isDark = !document.body.classList.contains('dark'); applyTheme(isDark); localStorage.setItem('theme', isDark ? 'dark' : 'light'); });
-		toggle.addEventListener('keypress', (e) => { if (e.key === 'Enter' || e.key === ' ') toggle.click(); });
+	if (captionLanguageSelect) {
+		captionLanguageSelect.addEventListener('change', () => {
+			captionLanguage = captionLanguageSelect.value;
+			localStorage.setItem('captionLanguage', captionLanguage);
+			document.documentElement.lang = captionLanguage === 'ne' ? 'ne' : 'en';
+			selectIndex(currentIndex);
+			if (viewer.getAttribute('aria-hidden') === 'false') showViewerIndex(currentIndex);
+		});
 	}
+
 });
