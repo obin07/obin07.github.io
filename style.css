@@ -149,8 +149,7 @@ img {
   line-height: 1.4;
   text-align: center;
   margin: 0 auto;
-  opacity: 0;
-  transform: translateY(8px);
+  opacity: 1;
 }
 
 #display-caption.caption-reveal {
@@ -317,10 +316,6 @@ footer {
 
 @media screen and (max-width: 899px) {
   .nav-language {
-    display: none;
-  }
-
-  #display-caption {
     display: none;
   }
 }
