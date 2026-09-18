@@ -5,15 +5,18 @@ const imagesDir = path.join(__dirname, '..', 'images');
 const out = path.join(__dirname, '..', 'images.json');
 
 const exts = ['.jpg', '.jpeg', '.png', '.webp', '.gif', '.svg'];
+const existing = fs.existsSync(out) ? JSON.parse(fs.readFileSync(out, 'utf8')) : [];
+const existingByFile = new Map(existing.map(entry => [entry.file, entry]));
 
 const files = fs.readdirSync(imagesDir).filter(f => exts.includes(path.extname(f).toLowerCase()));
 
 const manifest = files.map(f => {
+  const previous = existingByFile.get(f) || {};
   return {
     file: f,
-    alt: path.basename(f, path.extname(f)).replace(/[-_]/g, ' '),
-    caption: '',
-    captionNe: ''
+    alt: previous.alt || path.basename(f, path.extname(f)).replace(/[-_]/g, ' '),
+    caption: previous.caption || '',
+    captionNe: previous.captionNe || ''
   };
 });
 
